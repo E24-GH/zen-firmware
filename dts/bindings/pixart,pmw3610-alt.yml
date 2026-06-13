@@ -1,0 +1,34 @@
+description: |
+  Sensor driver for the pixart PMW3610 mouse sensor 
+
+compatible: "pixart,pmw3610-alt"
+
+include: spi-device.yaml
+
+properties:
+  irq-gpios:
+    type: phandle-array
+    required: true
+  cpi:
+    type: int
+    default: 600
+    description: "CPI value (Range: 200 - 3200, Step: 200)"
+  swap-xy:
+    type: boolean
+  invert-x:
+    type: boolean
+  invert-y:
+    type: boolean
+  evt-type:
+    type: int
+    required: true
+  x-input-code:
+    type: int
+    required: true
+  y-input-code:
+    type: int
+    required: true
+  force-awake:
+    type: boolean
+  force-awake-4ms-mode:
+    type: boolean
