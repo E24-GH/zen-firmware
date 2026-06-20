@@ -1,5 +1,6 @@
 if(CONFIG_SHIELD_ZEN_LEFT OR CONFIG_SHIELD_ZEN_RIGHT)
   zephyr_library()
   zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
+  zephyr_library_sources(src/mini_trackpad_init_reg.c)
   zephyr_library_sources_ifdef(CONFIG_PMW3610_ALT drivers/pmw3610_alt/src/pmw3610.c)
 endif()

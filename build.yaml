@@ -4,6 +4,14 @@ include:
     snippet: "studio-rpc-usb-uart split-central input-trackball-pmw3610 input-listener"
     artifact-name: zen_right_trackball_pmw3610_central
   - board: bmp_boost
+    shield: zen_right
+    snippet: "studio-rpc-usb-uart split-central input-trackball-paw3222 input-listener"
+    artifact-name: zen_right_trackball_paw3222_central
+  - board: bmp_boost
+    shield: zen_right
+    snippet: "studio-rpc-usb-uart split-central input-trackpad-mini input-listener input-split-listener input-split"
+    artifact-name: zen_right_trackpad_central
+  - board: bmp_boost
     shield: zen_left
     snippet: "studio-rpc-usb-uart"
     artifact-name: zen_left_peripheral

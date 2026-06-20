@@ -1,0 +1,4 @@
+name: input-trackball-paw3222
+append:
+  EXTRA_DTC_OVERLAY_FILE: input-trackball-paw3222.overlay
+  EXTRA_CONF_FILE: input-trackball-paw3222.conf

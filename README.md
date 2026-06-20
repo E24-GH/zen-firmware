@@ -22,12 +22,16 @@ GitHub Actionsで作成される `firmware` というzipファイルには、以
 
 - 設定リセット用UF2ファイル
 - `zen_right_trackball_pmw3610_central.uf2`
+- `zen_right_trackball_paw3222_central.uf2`
+- `zen_right_trackpad_central.uf2`
 - `zen_left_peripheral.uf2`
 
 通常使用するファイルは以下です。
 
 - 右手: `zen_right_trackball_pmw3610_central.uf2`
 - 左手: `zen_left_peripheral.uf2`
+
+PAW3222やTrackpadを使用する場合は、それぞれ名前に対応する右手用UF2ファイルを使用します。標準構成ではPMW3610用を使用してください。
 
 無線接続がうまくいかない場合や、別のファームウェアから切り替える場合は、先に設定リセット用のUF2ファイルを使います。
 
@@ -43,7 +47,7 @@ GitHub Actionsで作成される `firmware` というzipファイルには、以
 
 ## 対象
 
-このリポジトリは、PMW3610トラックボール版のZEN向けです。
+このリポジトリは、PMW3610トラックボール版を標準構成とし、PAW3222およびTrackpadを使用するカスタム構成にも対応しています。
 
 ## うまく接続できない場合
 

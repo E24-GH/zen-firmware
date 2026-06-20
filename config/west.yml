@@ -4,6 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    - name: kot149
+      url-base: https://github.com/kot149
+    - name: kumamuk-git
+      url-base: https://github.com/kumamuk-git
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,11 +22,19 @@ manifest:
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
       revision: main
+    - name: zmk-driver-paw3222
+      remote: sekigon-gonnoc
+      revision: torabo-tsuki
+    - name: zmk-driver-iqs7211e
+      remote: sekigon-gonnoc
     - name: zmk-feature-cdc-acm-bootloader-trigger
       remote: sekigon-gonnoc
       revision: v0.2
     - name: zmk-feature-non-lipo-battery-management
       remote: sekigon-gonnoc
       revision: main
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
   self:
     path: config
