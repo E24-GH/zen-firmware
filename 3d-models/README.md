@@ -22,6 +22,7 @@ STLファイルは `stl/` に格納しています。
 - `zen-trackball-parts-PAW3222-v1.0.stl`
 - `zen-trackball-parts-PMW3610-v1.0.stl`
 - `zen-trackpad-cover-v1.0.stl`
+- `zen-trackpad-top-cover-v1.0.stl`
 
 ## ライセンス
 
