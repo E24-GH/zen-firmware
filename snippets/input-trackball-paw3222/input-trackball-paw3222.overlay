@@ -1,4 +1,24 @@
 
+/ {
+    paw3222_scroll_inertia: paw3222_scroll_inertia {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+
+        /* axis = 0: both axes, matching the free vertical/horizontal
+         * scroll already produced by zip_xy_to_scroll_mapper below. */
+        axis = <0>;
+        layer = <4>;
+
+        /* Must match the &scroll_scaler args downstream. */
+        scale = <1>;
+        scale-div = <18>;
+
+        /* Lowered from the default (7) to match our small scale/scale-div
+         * ratio: output frequency at cutoff = stop * scale * 125 / scale-div. */
+        stop = <1>;
+    };
+};
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -22,7 +42,8 @@
         layers = <4>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
-            <&scroll_scaler 1 28>;
+            <&paw3222_scroll_inertia>,
+            <&scroll_scaler 1 18>;
         process-next;
     };
 };
